@@ -6,6 +6,28 @@
   "repository": "https://github.com/jessicaantiope/te-reo-maori-daily-word.git",
   "author": "jessica draper <j.b.draper@hotmail.com>",
   "license": "MIT",
+  
+  "scripts": {
+    "dev": "nodemon --watch server & webpack --watch",
+    "knex": "knex",
+    "migrate": "[ \"$NODE_ENV\" = \"production\" ] && exit 0; knex migrate:latest",
+    "migrate:prod": "knex migrate:latest",
+    "start": "node server",
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
+  "jest": {
+    "setupFiles": [
+      "dotenv/config"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "react",
+      "stage-3"
+    ]
+  },
   "dependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
