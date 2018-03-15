@@ -2,7 +2,7 @@
   "name": "te-reo-maori-daily-word",
   "version": "1.0.0",
   "description": "A word of the day in te reo Maori",
-  "main": "index.js",
+  "main": "server/index.js",
   "repository": "https://github.com/jessicaantiope/te-reo-maori-daily-word.git",
   "author": "jessica draper <j.b.draper@hotmail.com>",
   "license": "MIT",
@@ -11,7 +11,7 @@
     "knex": "knex",
     "migrate": "[ \"$NODE_ENV\" = \"production\" ] && exit 0; knex migrate:latest",
     "migrate:prod": "knex migrate:latest",
-    "start": "node server",
+    "start": "node server/index",
     "test": "jest",
     "test:watch": "jest --watchAll"
   },

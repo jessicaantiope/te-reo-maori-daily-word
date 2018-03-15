@@ -5,7 +5,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h1>Hello App</h1>
+        <h1>Te Reo Maori word of the day</h1>
       </div>
     )
   }
