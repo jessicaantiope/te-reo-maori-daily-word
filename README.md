@@ -76,7 +76,6 @@ As a user:
 
 
 ## DB (Server Side)
-  There should be HEAPS of tables
 
 ### Auth
   | Column Name | Data Type |
