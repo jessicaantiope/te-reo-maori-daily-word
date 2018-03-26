@@ -25,7 +25,7 @@ As a user:
   | name | purpose |
   | --- | --- |
   | App | The component that holds everything |
-  | Home | '/' route, base page for info and what our app is |
+  | Home | '/' route, base page for info and what the app is about|
   | Nav | The nav bar - on every page |
   | Auth | A place where you go to log in or register - holds both of those comps |
   | Login | Where you go to login |
@@ -91,7 +91,7 @@ As a user:
   | id | Integer |
   | maori_word | String |
   | english_word | string |
-  | expample | string |
+  | example | string |
   
 
 
