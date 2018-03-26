@@ -985,11 +985,15 @@ var App = function (_React$Component) {
         'div',
         null,
         _react2.default.createElement(
-          'h1',
-          null,
-          'Te Reo Maori word of the day'
-        ),
-        _react2.default.createElement(_Nav2.default, null)
+          'div',
+          { className: 'container' },
+          _react2.default.createElement(
+            'h1',
+            { className: 'title' },
+            'Te Reo Maori Word of the Day'
+          ),
+          _react2.default.createElement(_Nav2.default, null)
+        )
       );
     }
   }]);
@@ -18429,20 +18433,6 @@ var Nav = function (_React$Component) {
         _react2.default.createElement(
           'div',
           null,
-          _react2.default.createElement(
-            'nav',
-            { className: 'navbar navbar-expand-md navbar-light bg-light navBar textColourNav' },
-            _react2.default.createElement(
-              _reactRouterDom.Link,
-              { to: '/', className: 'navbar-brand' },
-              _react2.default.createElement('i', { className: 'fas fa-home faFaFont' })
-            ),
-            _react2.default.createElement(
-              'button',
-              { className: 'navbar-toggler', type: 'button', 'data-toggle': 'collapse', 'data-target': '#navbarSupportedContent', 'aria-controls': 'navbarSupportedContent', 'aria-expanded': 'false', 'aria-label': 'Toggle navigation' },
-              _react2.default.createElement('span', { className: 'navbar-toggler-icon' })
-            )
-          ),
           _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _Home2.default })
         )
       );
